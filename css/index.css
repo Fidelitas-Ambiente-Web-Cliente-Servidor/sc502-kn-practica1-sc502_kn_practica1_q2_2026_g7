@@ -91,15 +91,20 @@
 
 /* TESTIMONIOS */
 
-.testimonios {
-    padding: 70px 0;
+.testimonio {
+    text-align: center;
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
 }
 
-.testimonio {
-    background-color: #f8fafc;
-    padding: 25px;
-    border-left: 5px solid #2563eb;
-    border-radius: 8px;
+.testimonio-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #2563eb;
 }
 
 /* RESPONSIVE */
