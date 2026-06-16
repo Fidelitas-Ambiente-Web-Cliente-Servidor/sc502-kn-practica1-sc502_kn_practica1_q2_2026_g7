@@ -19,9 +19,9 @@
             </div>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="cursos.html" class="activo">Cursos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="profesores.html">Profesores</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -45,63 +45,45 @@
             <div class="row g-4">
 
                 <!-- FORMULARIO -->
-                <div class="col-lg-7">
+                <form id="formContacto">
 
-                    <div class="contacto-box">
-
-                        <h2>Envíanos un mensaje</h2>
-
-                        <form>
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Nombre Completo
-                                </label>
-
-                                <input type="text" class="form-control" placeholder="Ingresa tu nombre">
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Correo Electrónico
-                                </label>
-
-                                <input type="email" class="form-control" placeholder="correo@ejemplo.com">
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Teléfono
-                                </label>
-
-                                <input type="tel" class="form-control" placeholder="+506 8888-8888">
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Asunto
-                                </label>
-
-                                <input type="text" class="form-control" placeholder="Asunto del mensaje">
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="form-label">
-                                    Mensaje
-                                </label>
-
-                                <textarea class="form-control" rows="5"
-                                    placeholder="Escribe tu mensaje aquí..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn-contacto">
-                                Enviar Mensaje
-                            </button>
-
-                        </form>
-
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" id="nombre" class="form-control">
+                        <small id="errorNombre" class="mensaje-error"></small>
                     </div>
-                </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" id="correo" class="form-control">
+                        <small id="errorCorreo" class="mensaje-error"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="tel" id="telefono" class="form-control">
+                        <small id="errorTelefono" class="mensaje-error"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Asunto</label>
+                        <input type="text" id="asunto" class="form-control">
+                        <small id="errorAsunto" class="mensaje-error"></small>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="5"></textarea>
+                        <small id="errorMensaje" class="mensaje-error"></small>
+                    </div>
+
+                    <button type="submit" id="btnEnviar" class="btn-contacto" disabled>
+                        Enviar Mensaje
+                    </button>
+
+                </form>
+
+                <div id="mensajeExito" class="mensaje-exito"></div>
 
                 <!-- INFORMACIÓN -->
                 <div class="col-lg-5">
@@ -145,11 +127,12 @@
         <div class="footer-contenido">
             <h3>TechMaster Academy</h3>
             <!-- REDES -->
-            <div class="redes-sociales"> <a href="#"> Facebook </a> <a href="#"> Instagram </a> <a href="#"> LinkedIn </a> 
-            <p class="creditos"> © 2026 TechMaster Academy</p>
-        </div>
+            <div class="redes-sociales"> <a href="#"> Facebook </a> <a href="#"> Instagram </a> <a href="#"> LinkedIn
+                </a>
+                <p class="creditos"> © 2026 TechMaster Academy</p>
+            </div>
     </footer>
-
+<script src="js/contacto.js"></script>
 </body>
 
 </html>

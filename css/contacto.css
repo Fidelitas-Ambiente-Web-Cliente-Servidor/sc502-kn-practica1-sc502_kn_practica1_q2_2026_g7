@@ -127,3 +127,48 @@
     }
 
 }
+
+/* Mensaje de error */
+
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Input valido */
+
+.campo-valido {
+    border-color: #16a34a !important;
+}
+
+/* Input invalido */
+
+.campo-invalido {
+    border-color: #dc2626 !important;
+}
+
+/* Mensaje de exito */
+
+.mensaje-exito {
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: #dcfce7;
+    color: #166534;
+
+    border: 1px solid #86efac;
+    border-radius: 8px;
+
+    font-weight: 600;
+    display: none;
+}
+
+/* Boton deshabilitado */
+
+.btn-contacto:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
