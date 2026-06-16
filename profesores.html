@@ -33,7 +33,8 @@
             <h1>Nuestro Equipo de Profesores</h1>
             <p>
                 Contamos con instructores expertos en la industria tecnológica, apasionados por enseñar
-                y comprometidos con el éxito de cada estudiante.
+                y comprometidos con el éxito de cada estudiante. Haz clic en una tarjeta para ver el
+                perfil completo.
             </p>
         </div>
     </section>
@@ -43,92 +44,8 @@
 
             <h2 class="titulo-seccion">Conoce a Nuestros Instructores</h2>
 
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=10" alt="Foto de Carlos Méndez">
-                        <div class="profesor-info">
-                            <h3>Carlos Méndez</h3>
-                            <span class="especialidad">Desarrollo Web</span>
-                            <p>
-                                Ingeniero en Sistemas con más de 10 años de experiencia en desarrollo front-end y back-end.
-                                Especialista en React y Node.js.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=11" alt="Foto de Ana Ramírez">
-                        <div class="profesor-info">
-                            <h3>Ana Ramírez</h3>
-                            <span class="especialidad">Ciencia de Datos</span>
-                            <p>
-                                Doctora en Matemáticas Aplicadas y experta en Python, Machine Learning y análisis
-                                estadístico de datos a gran escala.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=12" alt="Foto de Luis Torres">
-                        <div class="profesor-info">
-                            <h3>Luis Torres</h3>
-                            <span class="especialidad">Ciberseguridad</span>
-                            <p>
-                                Certificado en CEH y CISSP con 8 años de experiencia en seguridad de redes,
-                                ethical hacking y protección de infraestructuras.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=13" alt="Foto de Sofía Vargas">
-                        <div class="profesor-info">
-                            <h3>Sofía Vargas</h3>
-                            <span class="especialidad">Diseño UX/UI</span>
-                            <p>
-                                Diseñadora con experiencia en startups y grandes empresas. Experta en Figma,
-                                investigación de usuarios y diseño de interfaces centradas en la experiencia.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=14" alt="Foto de Roberto Chaves">
-                        <div class="profesor-info">
-                            <h3>Roberto Chaves</h3>
-                            <span class="especialidad">Cloud Computing</span>
-                            <p>
-                                Arquitecto de soluciones certificado en AWS y Azure. Lidera proyectos de migración
-                                a la nube para empresas de tecnología a nivel latinoamericano.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="profesor-card">
-                        <img src="https://picsum.photos/300/300?random=15" alt="Foto de Valeria Mora">
-                        <div class="profesor-info">
-                            <h3>Valeria Mora</h3>
-                            <span class="especialidad">Inteligencia Artificial</span>
-                            <p>
-                                Investigadora en IA con publicaciones internacionales. Especializada en redes
-                                neuronales, procesamiento de lenguaje natural y visión por computadora.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row" id="contenedor-profesores">
+                <p id="mensaje-estado" class="mensaje-estado">Cargando profesores...</p>
             </div>
 
         </div>
@@ -172,6 +89,37 @@
         </div>
     </section>
 
+
+    <div id="modal-profesor" class="modal-overlay" data-estado="cerrado">
+        <div class="modal-contenido" id="modal-contenido">
+
+            <button id="btn-cerrar-modal" class="modal-cerrar" aria-label="Cerrar modal">
+                &times;
+            </button>
+
+            <div class="modal-header-profesor">
+                <img id="modal-foto" src="" alt="Foto del profesor">
+                <div>
+                    <h3 id="modal-nombre"></h3>
+                    <span id="modal-especialidad" class="especialidad"></span>
+                </div>
+            </div>
+
+            <div class="modal-body-profesor">
+                <p id="modal-descripcion"></p>
+
+                <h4>Cursos que imparte</h4>
+                <ul id="modal-cursos"></ul>
+
+                <h4>Contacto</h4>
+                <p>
+                    <a id="modal-correo" href="#"></a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <h3>TechMaster Academy</h3>
@@ -183,6 +131,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/profesores.js"></script>
 
 </body>
 
