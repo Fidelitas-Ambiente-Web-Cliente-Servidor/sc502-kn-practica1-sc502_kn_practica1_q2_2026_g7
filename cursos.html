@@ -31,139 +31,19 @@
             <h1>Catálogo de Cursos</h1>
             <p>Explora nuestros programas y especialízate en tecnología.</p>
             
-            <div class="buscador-contenedor">
-                <input type="text" placeholder="Buscar un curso...">
+            <div class="buscador-contenedor text-center">
+                <input type="text" id="inputBuscador" placeholder="Buscar un curso..." class="form-control d-inline-block mb-2" style="max-width: 400px;">
+                <select id="selectCategoria" class="form-select d-inline-block mb-2" style="max-width: 200px; margin-left: 10px;">
+                    <option value="Todos">Todas las categorías</option>
+                    <option value="Programación">Programación</option>
+                    <option value="Datos y Diseño">Datos y Diseño</option>
+                </select>
             </div>
         </div>
     </section>
 
     <section class="catalogo-contenido">
-        <div class="container">
-
-            <h2 class="categoria-titulo">Desarrollo Web</h2>
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=1" alt="Curso Desarrollo Web">
-                            <span class="tarjeta-tag">Programación</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>Desarrollo Web</h3>
-                            <p class="descripcion">HTML5, CSS3 y diseño responsive desde cero.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 8 semanas</p>
-                                <p><b>Precio:</b> $150</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=2" alt="Curso JavaScript">
-                            <span class="tarjeta-tag">Programación</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>JavaScript Moderno</h3>
-                            <p class="descripcion">Domina la programación del lado del cliente y lógica avanzada.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 10 semanas</p>
-                                <p><b>Precio:</b> $180</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=4" alt="Curso React">
-                            <span class="tarjeta-tag">Programación</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>React Framework</h3>
-                            <p class="descripcion">Crea interfaces de usuario modernas, interactivas y dinámicas.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 6 semanas</p>
-                                <p><b>Precio:</b> $200</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <h2 class="categoria-titulo mt-5">Datos y Diseño</h2>
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=3" alt="Curso Python">
-                            <span class="tarjeta-tag">Datos y Diseño</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>Python Profesional</h3>
-                            <p class="descripcion">Automatización, análisis de datos y desarrollo de scripts eficientes.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 12 semanas</p>
-                                <p><b>Precio:</b> $220</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=5" alt="Curso SQL">
-                            <span class="tarjeta-tag">Datos y Diseño</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>Bases de Datos SQL</h3>
-                            <p class="descripcion">Diseña, modela y administra bases de datos relacionales robustas.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 8 semanas</p>
-                                <p><b>Precio:</b> $160</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="tarjeta-curso">
-                        <div class="tarjeta-imagen">
-                            <img src="https://picsum.photos/400/250?random=6" alt="Curso UI UX">
-                            <span class="tarjeta-tag">Datos y Diseño</span>
-                        </div>
-                        <div class="tarjeta-cuerpo">
-                            <h3>Diseño UI / UX</h3>
-                            <p class="descripcion">Aprende a diseñar interfaces y experiencias de usuario de alto impacto.</p>
-                            <div class="tarjeta-detalles">
-                                <p><b>Duración:</b> 6 semanas</p>
                                 <p><b>Precio:</b> $140</p>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn-curso">Ver curso</button>
                             </div>
                         </div>
                     </div>
@@ -171,6 +51,7 @@
 
             </div> 
 
+        <div class="container" id="contenedorCatalogo">
         </div>
     </section>
 
@@ -182,6 +63,7 @@
         </div>
     </footer>
 
+    <script src="js/cursos.js"></script>
 </body>
 
 </html>
