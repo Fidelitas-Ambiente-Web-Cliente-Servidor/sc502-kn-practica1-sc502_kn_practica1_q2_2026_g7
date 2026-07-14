@@ -26,7 +26,28 @@ CREATE TABLE IF NOT EXISTS `testimonios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- 4. Tabla Contacto
+
+CREATE TABLE contacto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
+    asunto VARCHAR(100) NOT NULL,
+    mensaje TEXT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- 4. La DATA
 INSERT INTO `testimonios` (`id`, `nombre`, `texto`, `foto`) VALUES
-(1, 'María Rodríguez', 'Gracias a TechMaster conseguí mi primer empleo.', 'https://i.pravatar.cc/100?img=23'),
-(2, 'Carlos Jiménez', 'Los cursos son prácticos y los profesores expertos.', 'https://i.pravatar.cc/100?img=11');
+(1, 'María Rodríguez', 'Gracias a TechMaster conseguí mi primer empleo.', 'https://site.com/images/maria.jpg'),
+(2, 'Carlos Jiménez', 'Los cursos son prácticos y los profesores expertos.', 'https://');
+
+-- Datos de prueba para la tabla de contacto
+
+INSERT INTO contacto (nombre, correo, telefono, asunto, mensaje) VALUES
+('Carlos Mora','carlos@gmail.com','88881111','Información','Quiero conocer más acerca de los cursos que ofrecen.'),
+('María López','maria@gmail.com','88882222','Horarios','Necesito información sobre los horarios disponibles.'),
+('José Rodríguez','jose@gmail.com','88883333','Matrícula','¿Cuál es el proceso para matricular un curso?'),
+('Ana Fernández','ana@gmail.com','88884444','Certificaciones','¿Los cursos cuentan con certificado oficial?'),
+('Luis Sánchez','luis@gmail.com','88885555','Consulta','Estoy interesado en los programas de desarrollo web.');
