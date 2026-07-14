@@ -8,8 +8,8 @@ Blanco: #ffffff
 */
 
 * {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     box-sizing: border-box;
 }
 
@@ -18,7 +18,12 @@ body {
     color: #1f2937;
 }
 
-.navbar {
+/*.navbar {
+/*background-color: #0f172a;
+    padding: 15px 0;
+}
+*/
+.navbar-custom {
     background-color: #0f172a;
     padding: 15px 0;
 }

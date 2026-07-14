@@ -1,3 +1,4 @@
+/*
 // 1. Datos de los cursos
 const cursos = [
     {
@@ -100,3 +101,4 @@ document.addEventListener("DOMContentLoaded", () => {
     renderizarCursos();
     renderizarTestimonios();
 });
+*/
