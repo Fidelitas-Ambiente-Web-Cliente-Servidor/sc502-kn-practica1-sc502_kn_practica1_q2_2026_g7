@@ -51,3 +51,55 @@ INSERT INTO contacto (nombre, correo, telefono, asunto, mensaje) VALUES
 ('José Rodríguez','jose@gmail.com','88883333','Matrícula','¿Cuál es el proceso para matricular un curso?'),
 ('Ana Fernández','ana@gmail.com','88884444','Certificaciones','¿Los cursos cuentan con certificado oficial?'),
 ('Luis Sánchez','luis@gmail.com','88885555','Consulta','Estoy interesado en los programas de desarrollo web.');
+
+
+--tabla profesores
+CREATE TABLE IF NOT EXISTS `profesores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `especialidad` varchar(100) NOT NULL,
+  `descripcion` text NOT NULL,
+  `descripcion_larga` text NOT NULL,
+  `foto` varchar(255),
+  `correo` varchar(150) NOT NULL,
+  `cursos_imparte` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--datos de prueba que ya existian en js
+INSERT INTO `profesores` (`id`, `nombre`, `especialidad`, `descripcion`, `descripcion_larga`, `foto`, `correo`, `cursos_imparte`) VALUES
+(1, 'Carlos Méndez', 'Desarrollo Web',
+ 'Ingeniero en Sistemas con más de 10 años de experiencia en desarrollo front-end y back-end.',
+ 'Ingeniero en Sistemas con más de 10 años de experiencia en desarrollo front-end y back-end. Especialista en React y Node.js, ha liderado equipos de desarrollo en empresas de tecnología y disfruta enseñar buenas prácticas de programación a nuevos talentos.',
+ 'https://picsum.photos/300/300?random=10', 'carlos.mendez@techmaster.com',
+ 'Desarrollo Web, JavaScript Moderno, React desde Cero'),
+
+(2, 'Ana Ramírez', 'Ciencia de Datos',
+ 'Doctora en Matemáticas Aplicadas y experta en Python, Machine Learning y análisis de datos.',
+ 'Doctora en Matemáticas Aplicadas y experta en Python, Machine Learning y análisis estadístico de datos a gran escala. Ha trabajado como consultora para empresas del sector financiero y le apasiona transformar datos en decisiones.',
+ 'https://picsum.photos/300/300?random=11', 'ana.ramirez@techmaster.com',
+ 'Python Profesional, Machine Learning, Análisis de Datos'),
+
+(3, 'Luis Torres', 'Ciberseguridad',
+ 'Certificado en CEH y CISSP con 8 años de experiencia en seguridad de redes.',
+ 'Certificado en CEH y CISSP con 8 años de experiencia en seguridad de redes, ethical hacking y protección de infraestructuras críticas. Ha participado en auditorías de seguridad para entidades gubernamentales y privadas.',
+ 'https://picsum.photos/300/300?random=12', 'luis.torres@techmaster.com',
+ 'Ciberseguridad Básica, Ethical Hacking, Seguridad en Redes'),
+
+(4, 'Sofía Vargas', 'Diseño UX/UI',
+ 'Diseñadora con experiencia en startups y grandes empresas, experta en Figma.',
+ 'Diseñadora con experiencia en startups y grandes empresas. Experta en Figma, investigación de usuarios y diseño de interfaces centradas en la experiencia del usuario final. Cree firmemente en el diseño accesible para todos.',
+ 'https://picsum.photos/300/300?random=13', 'sofia.vargas@techmaster.com',
+ 'Fundamentos de UX/UI, Diseño con Figma, Prototipado Web'),
+
+(5, 'Roberto Chaves', 'Cloud Computing',
+ 'Arquitecto de soluciones certificado en AWS y Azure.',
+ 'Arquitecto de soluciones certificado en AWS y Azure. Lidera proyectos de migración a la nube para empresas de tecnología a nivel latinoamericano y enseña con un enfoque totalmente práctico y orientado a proyectos reales.',
+ 'https://picsum.photos/300/300?random=14', 'roberto.chaves@techmaster.com',
+ 'Fundamentos de la Nube, AWS Práctico, Arquitectura Cloud'),
+
+(6, 'Valeria Mora', 'Inteligencia Artificial',
+ 'Investigadora en IA con publicaciones internacionales en redes neuronales.',
+ 'Investigadora en IA con publicaciones internacionales. Especializada en redes neuronales, procesamiento de lenguaje natural y visión por computadora. Combina la teoría con proyectos aplicados en cada una de sus clases.',
+ 'https://picsum.photos/300/300?random=15', 'valeria.mora@techmaster.com',
+ 'Introducción a la IA, Redes Neuronales, Procesamiento de Lenguaje Natural');

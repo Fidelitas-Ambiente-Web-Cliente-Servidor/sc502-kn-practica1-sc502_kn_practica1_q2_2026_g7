@@ -15,7 +15,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/PRACTICA_PROGRAMADA1/index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/PRACTICA_PROGRAMADA1/cursos.html">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/PRACTICA_PROGRAMADA1/profesores.html">Profesores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?controller=profesores&action=index">Profesores</a></li>
                     <li class="nav-item"><a class="nav-link" href="/PRACTICA_PROGRAMADA1/contacto.html">Contacto</a></li>
                 </ul>
             </div>

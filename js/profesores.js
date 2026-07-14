@@ -1,6 +1,6 @@
 
 
-const profesores = [
+/*const profesores = [
     {
         id: 1,
         nombre: "Carlos Méndez",
